@@ -1,0 +1,638 @@
+.toppage {
+    display: grid;
+    grid-template-areas: 
+        "left-side right-side";
+    grid-template-columns: 45% auto;
+    grid-template-rows: auto;
+}
+
+.customerreview {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-left: 10px solid;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 0 auto 10px;
+    background: #fafafa;
+    gap: 11px;
+}
+
+.customerreview .reviewcontents {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.patientscore {
+    padding-right: 20px;
+    padding-left: 5px;
+}
+
+.reviewcontents h3 {
+    margin: 10px 0 0;
+}
+
+.reviewcontents p {
+    margin: 5px 0;
+}
+
+.ratingtext {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.leftside {
+    grid-area: left-side;
+    background-color: rgb(220, 220, 220);
+    text-align: center;
+    align-content: center;
+}
+
+.leftside img {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(200, 200, 200);
+}
+
+.rightside {
+    grid-area: right-side;
+    color: white;
+    padding: 275px 50px 75px;
+    text-align: center;
+}
+
+.infonavigation {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    border-bottom: rgba(0,0,0,0) solid;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+}
+  
+.infonavigation button {
+    background-color: inherit;
+    width: 200px;
+    float: center;
+    border: none;
+    cursor: pointer;
+    padding: 20px 0px;
+    transition: 0.1s;
+    font-size: 20px;
+}
+  
+.infonavigation button.active {
+    font-weight: bold;
+}
+  
+.details {
+    text-align: left;
+    display: none;
+    border: 1px solid #ccc;
+    border: none;
+}
+
+.details h3 {
+    font-size: 16px
+}
+
+.details h2 {
+    font-size: 26px;
+    padding: 5px;
+}
+
+#detailstitle {
+    color: white;
+    font-family: "Lexend";
+}
+
+.overviewtabs img {
+    width: auto; 
+    height: 120px;
+    padding: 10px 0;
+}
+
+.overviewtabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ebebeb;
+}
+
+.unknownconsultanthyperlinks a {
+    padding-top: 0;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#ovtab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 240px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#ovtab h2 {
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#ovtab h1 {
+    font-size: 20px
+}
+
+.dropdownmenu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: none;
+    width: 100%;
+    color: white;
+    border: white solid;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    transition: 0.1s ease;
+}
+
+.filtermenudropdown {
+    display: none;
+    width: 100%;
+    color: white;
+    border: white none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    transition: 0.1s ease;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+
+.reviewinfoandfilter {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+}
+
+.reviewscontainer {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.filtertab {
+    display: block;
+    flex: 0 0 300px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    padding: 5px 20px 0px;
+}
+
+.filtertab label {
+    display: inline-block;
+    margin: 2px 0;
+    font-size: 16px;
+}
+
+.reviewsarea {
+    flex: 1;
+    max-width: 1300px; 
+}
+
+.filters input[type="radio"], .filters input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.resetfilterbutton {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.starrating2 {
+    font-size: 50px
+}
+
+.noreviewsfound {
+    text-align: center;
+    font-size: 18px;
+}
+
+.noreviewsfound img {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.otherconsultantinfo {
+    max-width: 1200px;
+    overflow-x: auto;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.otherconsultantinfo::-webkit-scrollbar {
+    display: none;
+}
+
+.otherconsultantcard {
+    flex: 0 0 auto;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 350px;
+    margin: 0;
+}
+
+.consultantinfo {
+    text-align: left;
+}
+
+.consultantinfo h3 {
+    margin: 0 0 5px;
+    font-size: 26px;
+}
+
+.consultantinfo p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+#ratingscore, #fees {
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    align-content: center;
+    transition: all 0.3s ease;
+}
+
+#ratingscore {
+    border: 10px rgb(232, 197, 0) solid;
+    background-color: rgb(232, 197, 0);
+}
+
+#ratingscore2 {
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    width: 150px;
+    font-size: 25px;
+    border-radius:50px;
+    align-content: center;
+    transition: all 0.3s ease;
+}
+
+.recnotrec {
+    padding-top: 5px;
+    display: flex; 
+    gap: 10px; 
+    justify-content: space-between
+}
+
+.recnotrec span {
+    font-size: 30px;
+}
+
+#recommended, #notrecommended {
+    flex: 1;
+    width: 100%;
+    color: white;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    height: 90px;
+}
+
+#recommended {
+    background-color: rgb(10, 184, 10);
+}
+
+#notrecommended {
+    background-color: rgb(184, 10, 10);
+}
+
+.learnmorebutton {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.detailsbutton {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.lmbuttons {
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+}
+
+.otherconsultantswrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scrollbuttons {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+
+.scrollbuttons:hover {
+    background-color: rgb(188, 188, 188);
+}
+
+.clinicinfowrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.generalclinicinfo, .clinicinfowrapper iframe {
+    flex: 1;
+    width: 100%;
+}
+
+.generalclinicinfo, .clinicinfowrapper iframe {
+    border: 0; 
+    border-radius: 20px;
+}
+
+.clinicinfowrapper iframe {
+    min-height: 400px;
+}
+
+#h3span {
+    font-weight: 900; 
+    font-size: 30px; 
+}
+
+.clinicinfotext img {
+    width: 35px;
+    height: auto;
+    padding-right : 5px;
+}
+
+.availabilitywrapper {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.feestab {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.feestab img {
+    height: 50px;
+    width: auto;
+}
+
+.availabilitytext, .availabilitycalendar {
+    flex: 1;
+    min-width: 300px
+}
+
+.availabilitycalendar {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.calendarheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendarheader button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 8px;
+}
+
+.calendarheader h3 {
+    margin: 0;
+}
+
+.calendargrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    overflow-x: auto;
+}
+
+.calendargrid div {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.calendargrid .weekday {
+    font-weight: bold;
+    background-color: rgb(230, 230, 230);
+}
+
+.notavailableonthatday {
+    background-color: rgb(220, 220, 220);
+}
+
+.selecteddate {
+    font-weight: bold;
+}
+
+.selecteddate, #highlighteddate {
+    background-color: rgb(35, 138, 222);
+    color: white;
+}
+
+#highlighteddate {
+    border-radius: 10px;
+    border: rgb(35, 138, 222) 10px solid;
+}
+
+#highlighteddate a {
+    text-decoration: none; 
+    font-size: 20px; 
+    padding-left: 6px;
+    color: white;
+    font-weight:900;
+    transition: color 0.3s ease;
+}
+
+#highlighteddate a:hover {
+    color: rgb(255, 68, 68);
+}
+
+#keyinfo {
+    color: white;
+    border-radius: 10px;
+}
+
+.search h2 {
+    padding-bottom: 20px;
+}
+
+.calendarguidance {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.calendarguidance p {
+    flex: 1;
+    min-width: 200px;
+}
+
+@media (max-width: 768px) {
+    .scrollbuttons {
+        display: none;
+    }
+    .customerreview img {
+        display: none;
+    }
+
+    .toppage {
+        display: grid;
+        grid-template-areas: 
+            "left-side" "right-side";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; 
+    }
+
+    .reviewinfoandfilter {
+        max-width: none;
+    }
+
+    .starrating2 {
+        text-align: center;
+    }
+
+    .leftside {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .leftside img {
+        width: 200px;
+    }
+
+    .rightside {
+        width: 100%;
+        padding: 50px 0 30px 30px;
+    }
+    .nonfilters > div:last-child {
+        margin-right: 0;
+    }
+
+    .filtertab {
+        display: none;
+    }
+    .filtertab.active {
+        display: block;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .reviewscontainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .customerreview img {
+        width: 50px; 
+        height: auto;
+    }
+    .filtermenudropdown {
+        display: flex;
+    }
+
+    .listofreviews {
+        margin: 0 auto;
+        max-height: none;
+    }
+    .clinicinfowrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .infonavigation {
+        display: none;
+        top: 50px;
+    }
+    .infonavigation button {
+        width: 100%;
+        padding: 10px;
+    }
+    .infonavigation.active {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .dropdownmenu {
+        display: flex;
+    }
+}

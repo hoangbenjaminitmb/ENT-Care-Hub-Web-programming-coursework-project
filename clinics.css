@@ -1,0 +1,223 @@
+.clinicinformationwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px
+}
+
+#clinicinfotab {
+    text-align: center;
+    width: 350px;
+    margin: 0 10px;
+}
+
+#clinicinfotab img {
+    width: auto;
+    height: 120px;
+    padding-bottom: 10px;
+}
+
+#clinicinfotab p {
+    border-top: 5px solid rgb(43, 104, 162);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    transition: border 0.3s;
+}
+
+.markerlink {
+    font-family: "Lexend";
+}
+
+.markerlink h3 {
+    font-size: 16px;
+}
+
+.markerlink a {
+    text-decoration: none;
+    color: rgb(23, 58, 91);
+    transition: color 0.3s ease;
+}
+
+.markerlink a:hover {
+    color: rgb(163, 72, 205);
+}
+
+.findusmap {
+    background-color: rgb(210, 210, 210);
+}
+
+.showmap {
+    margin: 0 auto;
+    max-width: 1250px; 
+    height: 470px;
+    border-bottom: 10px solid rgb(43, 104, 162);
+}
+
+.clinicslocations {
+    background-color: rgb(230, 230, 230);
+}
+
+.filterclinicssection {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clinicfilters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.clinicfilters label {
+    display: inline-block;
+    margin: 2px 0;
+}
+
+.clinicfilters input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.selectclinicfilter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.selectclinicfilter select {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.clinicfilters button {
+    background-color: rgb(43, 104, 162);
+    color: white;
+    width: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.showingclinicssection {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showingclinics a {
+    text-decoration: none;
+    color: black;
+}
+
+.showingclinics {
+    flex: 1;
+    align-content: center;
+    min-width: 350px;
+    max-width: 700px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.clinicinformation {
+    text-align: left;
+    margin: 0;
+}
+
+.clinicinformationheader h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.clinicinformationheader p {
+    margin: 0;
+}
+
+#showlearnmore {
+    opacity: 0;
+    visibility:hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.showingclinics:hover #showlearnmore {
+    opacity: 1;
+    visibility: visible;
+}
+
+.clinicinformationheader {
+    font-family: "Lexend";
+    color: white;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: rgb(43, 104, 162);
+    border: 15px solid rgb(43, 104, 162);
+    transition: all 0.3s ease;
+}
+
+.showingclinics:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.showingclinics:hover .clinicinformationheader {
+    background-color: rgb(30, 71, 109);
+    border: 15px solid rgb(30, 71, 109);
+}
+
+.clinicinformation img {
+    width: 40px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.showingspecialities {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(31, 72, 109);
+    gap: 5px;
+    margin: 0;
+    padding: 10px 10px;
+    height: 60px;
+    transition: all 0.3s ease;
+}
+
+.showingclinics:hover .showingspecialities {
+    background-color: rgb(15, 48, 80);
+}
+
+.showingspecialities img {
+    padding-top: 2px;
+    width: 26px;
+    filter: invert(1);
+    height: 18px;
+}
+
+.specialitytype {
+    font-size: 14px;
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px solid rgb(80, 113, 159);
+    background-color: rgb(80, 113, 159);
+}
+
+@media (max-width: 850px) {
+    .clinicfilters button {
+        width: 100%;
+    }
+}

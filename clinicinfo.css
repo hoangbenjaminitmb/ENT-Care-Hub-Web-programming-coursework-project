@@ -1,0 +1,407 @@
+.toppart, .informationsection {
+    display: grid;
+    grid-template-areas: 
+        "left-side right-side";
+    grid-template-rows: auto;
+}
+
+.toppart {
+    grid-template-columns: 1fr 1fr
+}
+
+.informationsection {
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: 350px auto
+}
+
+.infosecleftside {
+    background-color: white;
+}
+
+.infosecbuttons {
+    position: sticky;
+    padding-top: 50px;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.infosecleftside, .leftside {
+    grid-area: left-side;
+}
+
+.infosecrightside {
+    grid-area: right-side;
+    padding: 20px;
+    text-align: left;
+}
+
+.infosecrightside h2 {
+    font-size: 26px;
+    padding: 5px;
+    color: white;
+    font-family: "Lexend";
+}
+
+.infosecbuttons button {
+    background-color: inherit;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 20px 0px;
+    transition: 0.1s;
+    font-size: 20px;
+}
+  
+.infosecleftside button.active {
+    font-weight: bold;
+}
+
+.leftside {
+    background-color: rgb(30, 71, 109);
+    color: white;
+    width: 100%;
+    height: 500px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside h1 {
+    margin-top: 250px; 
+    max-width: 500px;
+}
+
+.learnmorebutton, .learnmorebutton2 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.detailsbutton {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rightside {
+    grid-area: right-side;
+}
+
+.rightside iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dropdownmenu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: none;
+    width: 100%;
+    color: white;
+    border: white solid;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    transition: 0.1s ease;
+}
+
+.unknownclinicshyperlinks a {
+    padding-top: 0;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.generalclinicinfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.generalclinicinfo img {
+    width: auto;
+    height: 100px;
+}
+
+#gcitab {
+    align-items: center;
+    text-align: center;
+    min-width: 280px;
+}
+
+#gcitab h3 {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.spectabwrapper {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#spectab {
+    padding: 10px 0;
+    display: flex;
+    flex: 1;
+    color: white;
+    min-width: 300px;
+    align-content: center;
+    align-items: center;
+}
+
+#spectab div {
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+#spectab img {
+    filter: invert(1);
+    height: 100px;
+    width: auto;
+}
+
+.consultantcard, .consultantcardinfo, .consultantgeneralinfo {
+    display: flex;
+    align-items: center;
+}
+
+.consultantcard {
+    height: 120px;
+    transition: 0.3s ease;
+    justify-content: space-between;
+    background-color: rgb(230,230,230);
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.consultantcard h3 {
+    transition: all 0.3s ease;
+}
+
+.consultantinfo {
+    padding-left: 10px;
+    width: 100%;
+}
+
+.consultantimage {
+    margin: 10px;
+}
+
+.consultantcardinfo {
+    align-items: center;
+    color: black;
+}
+
+.consultantgeneralinfo {
+    flex-wrap: wrap;
+}
+
+.consultantgeneralinfo p {
+    margin: 0;
+}
+
+.consultantsection a {
+    text-decoration: none;
+}
+
+.consultantcard:hover {
+    background-color: rgb(210,210,210)
+}
+
+#topcontent {
+    margin: 5px 0 0;
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#topcontent h3 {
+    font-weight: 600;
+}
+
+#ratingscore {
+    margin-top: 12px;
+}
+
+#ratingscore {
+    border: 10px rgb(232, 197, 0) solid;
+    background-color: rgb(232, 197, 0);
+    transition: all 0.3s ease;
+}
+
+.consultantcard:hover #ratingscore {
+    border: 10px rgb(168, 142, 0) solid;
+    background-color: rgb(168, 142, 0);
+}
+
+#ratingscore, #fees {
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    align-content: center;
+    transition: all 0.3s ease;
+}
+
+.visitustabcontent {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.visitustabcontent iframe, .visitustextsection {
+    flex: 1;
+    min-width: 300px;
+    width: 100%;
+}
+
+.visitustextsection {
+    padding-top: 20px;
+}
+
+.visitustext p {
+    padding-bottom: 10px;
+}
+
+.visitustabcontent iframe {
+    height: 420px;
+}
+
+.clinicinfotext {
+    align-items: center;
+}
+
+.clinicinfotext img {
+    width: 50px;
+    height: auto;
+    padding-right : 5px;
+}
+
+.clinicinfotext h3 {
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.visitusclinicinfotext {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    background-color: rgb(230,230,230);
+    border: 10px solid rgb(230,230,230);
+}
+
+@media (max-width: 920px) {
+    .learnmorebutton2 {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .informationsection {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+        grid-template-areas: 
+            "left-side" "right-side" ;
+    }
+
+    .infosecleftside {
+        width: 100%;
+    }
+
+    .infosecbuttons button {
+        padding: 10px;
+    }
+
+    .infosecbuttons {
+        padding: 0;
+        display: none;
+        top: 50px;
+    }
+
+    .infosecbuttons h4 {
+        display: none;
+    }
+
+    .infosecleftside {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .infosecbuttons.active {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .dropdownmenu {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .visitustabcontent iframe {
+        height: 300px;
+    }
+    .visitustextsection {
+        padding-top: 5px;
+    }
+    
+    .toppart {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; 
+        grid-template-areas: 
+            "right-side" "left-side";
+    }
+    .consultantimage {
+        display: none;
+    }
+
+    .leftside h1 {
+        margin-top: 20px;
+    }
+
+    .leftside div {
+        margin-top: 20px;
+    }
+
+    .leftside {
+        height: 200px;
+        padding-left: 40px;
+        justify-content: start;
+    }
+
+    .rightside {
+        width: 100%;
+    }
+
+    .rightside iframe {
+        display: none;
+    }
+    #ratingscore, #fees {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,253 @@
+.explore-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+#exploretabs {
+    max-width: 1400px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#exploretabs::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    background-color: rgb(43, 104, 162);
+    color: #fff;
+    max-width: 400px;
+    border: none;
+    text-align: center;
+}
+
+.explore-button:hover {
+    background-color: rgb(30, 71, 109);
+    color: white;
+}
+
+.icon {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.featuredconsultantsinfo {
+    max-width: 1350px;
+    overflow-x: auto;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.featuredconsultantsinfo::-webkit-scrollbar {
+    display: none;
+}
+
+.featuredconsultantcard {
+    background: linear-gradient(30deg,  rgb(30, 71, 109), rgb(190, 190, 190)); 
+    border: 5px solid rgb(30, 71, 109);
+    flex: 0 0 auto;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 350px;
+    margin: 0;
+}
+
+.consultantinfo {
+    text-align: left;
+}
+
+.consultantinfo h3 {
+    margin: 0 0 5px;
+    font-size: 26px;
+}
+
+.consultantinfo p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+#ratingscore, #fees {
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    align-content: center;
+    transition: all 0.3s ease;
+}
+
+#ratingscore {
+    border: 10px rgb(232, 197, 0) solid;
+    background-color: rgb(232, 197, 0);
+}
+
+#fees {
+    background-color: rgb(43, 104, 162);
+    border: 10px solid rgb(43, 104, 162);
+    transition: all 0.3s ease;
+}
+
+.learnmorebutton {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.detailsbutton {
+    background-color: rgb(43, 104, 162);
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.detailsbutton:hover {
+    background-color: rgb(30, 71, 109);
+}
+
+.featuredconsultantswrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scrollbuttons {
+    display: none;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 25px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+
+.scrollbuttons:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.accrediationswrapper {
+    text-align: center;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#accrediationstab {
+    min-width: 230px;
+}
+
+#accrediationstab img {
+    padding: 0 10px 30px;
+    height: 120px;
+    width: auto;
+}
+
+.featuredclinictab {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+    border-left: 10px solid rgb(43, 104, 162);
+    flex: 1;
+    width: 100%;
+}
+
+#clinicmap {
+    height: 450px;
+}
+
+.clinicinfo, #clinicmap {
+    flex: 1;
+    min-width: 300px;
+}
+
+.clinicinfo {
+    padding: 20px;
+}
+
+.clinicinfotext img {
+    padding-top: 0;
+    width: 35px;
+    height: auto;
+    padding-right : 5px;
+}
+
+.clinicinfo h3 {
+    font-size: 16px
+}
+
+.clinicinfo h2 {
+    color: white;
+    background-color: rgb(43, 104, 162);
+    border: rgb(43, 104, 162) 15px solid;
+    font-size: 30px; 
+}
+
+.lmbuttons {
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+}
+
+#h3span {
+    font-weight: 900; 
+    font-size: 30px; 
+    color: rgb(43, 104, 162)
+}
+
+
+@media (max-width: 768px) {
+    #exploretabs p {
+        display: none;
+    }
+    #clinicmap {
+        height: 300px;
+    }
+
+    .scrollbuttons {
+        display: none;
+    }
+    .explore-button, .icon {
+        max-width: 300px;
+    }
+}

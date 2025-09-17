@@ -1,0 +1,282 @@
+.searchresultinfo {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-left: 10px solid rgb(43, 104, 162);
+    border-radius: 8px;
+    padding: 7px;
+    margin: 0 auto 10px;
+    background: #fafafa;
+    gap: 5px;
+    transition: 0.3s ease
+}
+
+.searchresultinfo:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.searchresultinfo:hover #topcontent {
+    color: rgb(43, 104, 162);
+}
+
+.searchresultinfo:hover .detailsbutton {
+    background-color: rgb(30, 71, 109);
+}
+
+.searchresultinfo .consultantinfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+#topcontent {
+    transition: all 0.3s ease;
+}
+
+.searchresultinfo {
+    position: relative;
+    overflow: hidden;
+}
+
+.consultationfee {
+    padding-right: 20px;
+}
+
+#topcontent {
+    margin: 5px 0 0;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topcontent h3 {
+    font-weight: 640;
+}
+
+.consultantinfo p {
+    margin: 0;
+}
+
+.ratingtext {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.availabledays {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.clicktolearnmore {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
+    color: inherit;
+}
+
+.clicktolearnmore h3 {
+    transition: color 0.3s ease;
+}
+
+.unknownconsultanthyperlinks a {
+    padding-top: 0;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.dropdownmenu {
+    display: none;
+    width: 100%;
+    color: white;
+    border: white solid;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    transition: 0.1s ease;
+}
+
+.filtermenudropdown {
+    background-color: rgb(43, 104, 162);
+    display: none;
+    width: auto;
+    color: white;
+    border: white none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    transition: 0.1s ease;
+    border-radius: 5px;
+}
+
+.resultsinfoandfilter {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    max-width: 340px;
+}
+
+.searchresultscontainer {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.sortby label {
+    padding-right: 10px;
+}
+
+.filtertab {
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    min-width: 300px;
+    border-radius: 10px;
+    flex: 0 0 300px;
+    border-left: 10px solid rgb(43, 104, 162);
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    padding: 5px 20px 0px;
+}
+
+.filtertab label {
+    display: inline-block;
+    margin: 2px 0;
+    font-size: 16px;
+}
+
+.resultsarea {
+    flex: 1;
+    margin: 10px;
+    max-width: 1300px; 
+}
+
+
+.filters input[type="radio"], .filters input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.filterbyavailability {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+#fees {
+    background-color: rgb(43, 104, 162);
+    border: 10px solid rgb(43, 104, 162);
+    transition: all 0.3s ease;
+}
+
+#ratingscore, #fees {
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    align-content: center;
+    transition: all 0.3s ease;
+}
+
+#ratingscore {
+    border: 10px rgb(232, 197, 0) solid;
+    background-color: rgb(232, 197, 0);
+}
+
+.searchresultinfo:hover #ratingscore {
+    border: 10px rgb(168, 142, 0) solid;
+    background-color: rgb(168, 142, 0);
+}
+
+.searchresultinfo:hover #fees {
+    background-color: rgb(30, 71, 109);
+    border: 10px solid rgb(30, 71, 109);
+}
+
+.noconsultantsfound {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.noconsultantsfound img {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.resetfilterbutton {
+    background-color: rgb(43, 104, 162);
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .resultsinfoandfilter {
+        max-width: none;
+    }
+    .filtertab {
+        display: none;
+    }
+    .filtertab.active {
+        display: block;
+        padding: 10px;
+        max-width: 100%;
+    }
+    .searchresultscontainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .searchresultinfo {
+        padding-left: 0px;
+    }
+
+    .filtermenudropdown {
+        display: flex;
+    }
+
+    .displayingtabs {
+        margin: 0 auto;
+        max-height: none;
+    }
+    .noconsultantsfound img {
+        max-width: 300px;
+    }
+    #ratingscore, #fees {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 910px) {
+    .consultantimage img {
+        display: none;
+    }
+}
+
+@media (max-width: 498px) {
+    body p {
+        font-size: 14px;
+    }
+}

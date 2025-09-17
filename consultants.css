@@ -1,0 +1,303 @@
+.consultantsinformationwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px
+}
+
+#consultantinfotab {
+    text-align: center;
+    width: 380px;
+    margin: 0 10px;
+}
+
+#consultantinfotab img {
+    width: auto;
+    height: 120px;
+    padding-bottom: 10px;
+}
+
+#consultantinfotab p {
+    border-top: 5px solid rgb(43, 104, 162);
+    padding-top: 5px;
+    transition: border 0.3s;
+}
+
+.specialityplusconsultants {
+    margin: 0 auto;
+}
+
+.specialitysections {
+    align-content: center;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.specialitysectionsheader {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.specialitysectionsheader button {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    font-weight: bold;
+    min-width: 75px;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.specialitysectionsheader:hover button {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.specialitysectionsheadertext {
+    display: flex;
+}
+
+.specialitysectionsheadertext img {
+    width: 65px;
+    filter: invert(1);
+    height: 65px;
+}
+
+.consultantsection {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.3s ease;
+    display: block;
+}
+
+.consultantsection.visible {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.consultantinfosection {
+    max-width: 1350px;
+    overflow-x: auto;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.consultantinfosection::-webkit-scrollbar {
+    display: none;
+}
+
+.consultantcard {
+    flex: 0 0 auto;
+    color: white;
+    background-color: #f9f9f9;
+    border: 1px none;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 350px;
+    margin: 0;
+}
+
+.consultantinfo {
+    text-align: left;
+}
+
+.consultantinfo h3 {
+    margin: 0 0 5px;
+    font-size: 26px;
+}
+
+.consultantinfo p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+#ratingscore, #fees {
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    align-content: center;
+    transition: all 0.3s ease;
+}
+
+#ratingscore {
+    border: 10px rgb(232, 197, 0) solid;
+    background-color: rgb(232, 197, 0);
+}
+
+.learnmorebutton {
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.detailsbutton {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.detailsbutton:hover {
+    text-decoration: underline;
+}
+
+.consultantswrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scrollbuttons {
+    position: relative;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 25px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+
+.scrollbuttons:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.whybookwithus, .joinourteam {
+    display: grid;
+    grid-template-areas: 
+        "left-side right-side";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.wbwuleftside {
+    justify-self: end;
+    max-width: 650px;
+    grid-area: left-side;
+}
+
+.wbwurightside {
+    background-image: url(healthconsultantimage2.jpg);
+    background-size: cover;
+    background-position: 47% ;
+    background-repeat: no-repeat;
+    grid-area: right-side;
+}
+
+.samplereviews {
+    justify-content: center;
+    display: flex;
+    text-align: left;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.reviewtab {
+    border-radius: 10px;
+    align-content: center;
+    color: white;
+    background-color: rgb(34, 82, 126);
+    flex: 1;
+    min-width: 260px;
+    transition: background-color 0.3s ease;
+}
+
+.reviewtab:hover {
+    background-color: rgb(23, 58, 91);
+}
+
+.reviewtab p {
+    padding-left: 10px;
+    padding-right: 5px
+}
+
+.reviewtab a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.reviewtab a:hover {
+    color: rgb(82, 138, 191)
+}
+
+.joinourteam {
+    background-color: rgb(43, 104, 162);
+    color: white;
+}
+
+.jotleftside {
+    background-image: url(careers.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    grid-area: left-side;
+    height: 500px;
+}
+
+.jotrightside {
+    max-width: 650px;
+    align-items: start;
+    align-content: center;
+    grid-area: right-side;
+}
+
+@media (max-width: 768px) {
+    .whybookwithus, .joinourteam {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .whybookwithus {
+        grid-template-areas: 
+        "right-side" "left-side" ;
+    }
+
+    .joinourteam {
+        grid-template-areas: 
+        "left-side" "right-side";
+    }
+
+    .wbwuleftside, .jotrightside {
+        max-width: none;
+        width: 100%;
+    }
+    .wbwurightside, .jotleftside {
+        height: 325px;
+    }
+
+    .scrollbuttons {
+        display: none;
+    }
+}
+
