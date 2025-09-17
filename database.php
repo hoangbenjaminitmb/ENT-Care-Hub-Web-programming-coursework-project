@@ -1,8 +1,8 @@
 <?php
-    $servername = "servername";
-    $username = "username";
-    $password = "password";
-    $dbname = "databasename";
+    $servername = "placeholder";
+    $username = "placeholder";
+    $password = "placeholder";
+    $dbname = "placeholder";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
